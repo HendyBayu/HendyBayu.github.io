@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ucapan_ulangtahun.css" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+
+      margin: 0;
+    }
+    body {
+      background-color: #be0581;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .content {
+      padding: 20px;
+    }
+    .box {
+      margin: 0 auto;
+      background-image: url(https://a.top4top.io/p_21356fk5o0.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 10px;
+      width: 300px;
+      height: 300px;
+      -webkit-animation-name: animasi;
+      -webkit-animation-duration: 4s;
+      -webkit-animation-timing-function: ease;
+    }
+    @keyframes animasi {
+      0% {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+    .content h3 {
+      color: #fff;
+      letter-spacing: 15px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .content h3 span {
+      color: rgb(19, 14, 14);
+      font-size: 15px;
+    }
+    .button {
+      display: flex;
+      justify-content: center;
+    }
+    .btn {
+      text-align: center;
+      width: 80px;
+      height: 40px;
+      background-color: chartreuse;
+      padding: 20px 15px;
+      float: left;
+      font-family: monospace;
+      font-size: 1.2em;
+      transition: 0.3s;
+      margin: 10px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      transform: scale(1.2);
+      background-color: rgb(145, 255, 36);
+    }
+    #popOne,
+    #popTwo,
+    #popThree {
+      position: absolute;
+      left: 50%;
+      top: 10%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      width: 500px;
+      height: 190px;
+      border-radius: 5px;
+      box-shadow: darkslategray;
+      display: none;
+      padding: 20px 20px 20px 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #popTwo img {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      width: 65px;
+      height: 65px;
+      margin-bottom: 10px;
+    }
+    .tombol-terimakasih {
+      background-color: rgb(73, 73, 230);
+      color: #fff;
+      width: 100px;
+      height: 20px;
+      padding: 10px 10px 10px 10px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .player {
+      position: relative;
+      left: 50%;
+      text-align: center;
+      transform: translateX(-50%);
+      width: 350px;
+      background: #f1f3f4;
+      box-shadow: 0 50px 80px rgba(0, 0, 0, 0.25);
+    }
+    .player .imgBx {
+      position: relative;
+      width: 100%;
+      height: 300px;
+    }
+    .player .imgBx img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .player audio {
+      width: 100%;
+      outline: none;
+    }
+    footer {
+      background: seashell;
+      color: #000;
+      text-align: center;
+      height: 120px;
+      padding: 20px;
+    }
+    @media (max-width: 480px) {
+      #popOne,
+      #popTwo,
+      #popThree {
+        width: 300px;
+      }
+    }
+  </style>
+  <body>
+    <div class="content">
+      <div id="popOne">
+        <p>Happy birthday nadiaa🎊, sehat - sehat trus yaa, semangat truss kuliahnyaa, semngat trus organisasinyaa, semoga yg lu semogakan di tahun ini terwujud AMIN. moga cepet ketemu lgi ya masih belum nongs bareng nih kita wkwk🥳</p>
+        <div class="tombol-terimakasih" onclick="btnOne()">Terimakasih</div>
+      </div>
+      <div id="popTwo">
+        <img src="https://a.top4top.io/p_21356fk5o0.png" alt="" srcset="" />
+        <p>
+          HAPPY BIRTHDAY NED🤡, wish u all the bestt.. dah umur 20 moga makin banyak kemajuan ya🙂🙏🏻 (boncengin pas naik motor gitu misalnya) moga apa yang disemogakan cepat terkabul, corona juga cepet ilang biar bisa jalan jalan🤩 see you
+          1 bulan lagi kita di umur yg sama⛄
+        </p>
+        <div class="tombol-terimakasih" onclick="btnTwo()">Terimakasih</div>
+      </div>
+      <div id="popThree">
+        tambahan jangan lupa istirahat yaa jangan tidur malem², kalo butuh temen curhat/ngobrol bilang kita aja insyallah menghibur atau lngsng pc aja wkwk
+        <div class="tombol-terimakasih" onclick="btnThree()">Terimakasih</div>
+      </div>
+      <div class="box"></div>
+      <h3>HAPPY BIRTHDAY Nadia<br /><span>Hope you all the best</span></h3>
+      <div class="button">
+        <div class="btn" onclick="btnOne()">Box Misteri 1</div>
+        <div class="btn" onclick="btnTwo()">Box Misteri 2</div>
+        <div class="btn" onclick="btnThree()">Box Misteri 3</div>
+      </div>
+      <h3 style="text-align: center; margin-bottom: 15px">THIS SONG IS FOR YOU</h3>
+      <div class="player">
+        <div class="imgBx">
+          <img src="https://f.top4top.io/p_2135wuv4f2.jpeg" alt="Jamrud_jpg" />
+        </div>
+        <audio controls>
+          <source src="https://e.top4top.io/m_21355fxps7.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+    </div>
+    <script>
+      function btnOne() {
+        var x = document.getElementById("popOne");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function btnTwo() {
+        var x = document.getElementById("popTwo");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function btnThree() {
+        var x = document.getElementById("popThree");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

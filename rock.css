@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 8% 0;
+  font-family: monospace;
+  width: 100%;
+  height: 100%;
+  background-color: #f8ede3;
+  position: relative;
+}
+
+body .container {
+  width: 700px;
+  height: 50vh;
+  background-color: #bdd2b6;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.container h1 {
+  color: #525a50;
+  font-size: 30px;
+}
+
+.container h2 {
+  color: #525a50;
+  font-size: 20px;
+}
+
+.container .border {
+  width: 75%;
+  margin: auto;
+  background-color: #f8ede3;
+  height: 150px;
+  display: flex;
+}
+
+.border .pilih {
+  width: 33.33333%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border .pilih {
+  cursor: pointer;
+}
+
+.border .pilih:hover {
+  background-color: #ccc2b9;
+}
+
+.pilih i {
+  transform: scale(3.5);
+  color: #525a50;
+}
+
+body .anoun {
+  width: 30%;
+  height: 35vh;
+  background-color: #a2b29f;
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 30%;
+  left: 35%;
+}
+
+.anoun p {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.anoun .ok {
+  cursor: pointer;
+  font-size: 1.5em;
+  padding: 5px 25px;
+  border-radius: 20px;
+  border: 2px solid black;
+  transition: 0.3s;
+}
+.anoun .ok:hover {
+  background-color: #6f7a6c;
+}
+
+body .anoun i {
+  transform: scale(3);
+  margin: 5px 0;
+}
